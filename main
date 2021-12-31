@@ -1,0 +1,179 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local KevGUI = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local AutoF = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local AutoFoff = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local FastLift = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local AntiAFK = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local text = Instance.new("TextLabel")
+
+--Properties:
+
+KevGUI.Name = "KevGUI"
+KevGUI.Parent = game.CoreGui
+KevGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = KevGUI
+main.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.292703867, 0, 0.279475987, 0)
+main.Size = UDim2.new(0, 466, 0, 375)
+main.Active = true
+main.Draggable = true
+
+UICorner.Parent = main
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Size = UDim2.new(0, 466, 0, 50)
+title.Font = Enum.Font.SourceSans
+title.Text = "Kev's GUI V2"
+title.TextColor3 = Color3.fromRGB(85, 170, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+AutoF.Name = "AutoF"
+AutoF.Parent = main
+AutoF.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+AutoF.BorderSizePixel = 0
+AutoF.Position = UDim2.new(0.0439024381, 0, 0.1746988, 0)
+AutoF.Size = UDim2.new(0, 136, 0, 41)
+AutoF.Font = Enum.Font.SourceSans
+AutoF.Text = "AutoF"
+AutoF.TextColor3 = Color3.fromRGB(255, 0, 0)
+AutoF.TextScaled = true
+AutoF.TextSize = 14.000
+AutoF.TextWrapped = true
+AutoF.MouseButton1Click:connect(function()
+_G.LULU = true--change to true or false
+while _G.LULU do
+	wait()--change time if you want
+	if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool"):Activate()
+		end
+		wait()
+		AutoF.Visible = false
+		wait()
+		AutoFoff.Visible = true
+		wait()
+		TextBox.Text = "AutoF on"
+		wait(3)
+		TextBox.Text = "FUCK NIGGER'S"
+end
+
+UICorner_2.Parent = AutoF
+
+TextBox.Parent = main
+TextBox.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.182403445, 0, 0.373333365, 0)
+TextBox.Size = UDim2.new(0, 296, 0, 50)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "Nigga"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_3.Parent = TextBox
+
+AutoFoff.Name = "AutoFoff"
+AutoFoff.Parent = main
+AutoFoff.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+AutoFoff.BorderSizePixel = 0
+AutoFoff.Position = UDim2.new(0.0439024381, 0, 0.1746988, 0)
+AutoFoff.Size = UDim2.new(0, 136, 0, 41)
+AutoFoff.Visible = false
+AutoFoff.Font = Enum.Font.SourceSans
+AutoFoff.Text = "AutoF"
+AutoFoff.TextColor3 = Color3.fromRGB(255, 0, 0)
+AutoFoff.TextScaled = true
+AutoFoff.TextSize = 14.000
+AutoFoff.TextWrapped = true
+AutoF.MouseButton1Click:connect(function()
+_G.LULU = false--change to true or false
+while _G.LULU do
+	wait()--change time if you want
+	if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then
+		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool"):Activate()
+			end
+			wait()
+			AutoFoff.Visible = false
+			wait()
+			AutoF.Visible = true
+			wait()
+			TextBox.Text = "AutoF off"
+			wait(3)
+			TextBox.Text = "FUCK NIGGER'S"
+end
+
+UICorner_4.Parent = AutoFoff
+
+FastLift.Name = "FastLift"
+FastLift.Parent = main
+FastLift.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+FastLift.BorderSizePixel = 0
+FastLift.Position = UDim2.new(0.372228593, 0, 0.1746988, 0)
+FastLift.Size = UDim2.new(0, 136, 0, 41)
+FastLift.Font = Enum.Font.SourceSans
+FastLift.Text = "FastNiggaLift"
+FastLift.TextColor3 = Color3.fromRGB(255, 0, 0)
+FastLift.TextScaled = true
+FastLift.TextSize = 14.000
+FastLift.TextWrapped = true
+FastLift.MouseButton1Click:connect(function()
+			TextBox.Text = "You're gay"
+			wait(3)
+			TextBox.Text = "FUCK NIGGER'S"
+end)
+
+UICorner_5.Parent = FastLift
+
+AntiAFK.Name = "AntiAFK"
+AntiAFK.Parent = main
+AntiAFK.BackgroundColor3 = Color3.fromRGB(85, 85, 255)
+AntiAFK.BorderSizePixel = 0
+AntiAFK.Position = UDim2.new(0.689825177, 0, 0.1746988, 0)
+AntiAFK.Size = UDim2.new(0, 136, 0, 41)
+AntiAFK.Font = Enum.Font.SourceSans
+AntiAFK.Text = "AntiAFK"
+AntiAFK.TextColor3 = Color3.fromRGB(255, 0, 0)
+AntiAFK.TextScaled = true
+AntiAFK.TextSize = 14.000
+AntiAFK.TextWrapped = true
+AntiAFK.MouseButton1Click:connect(function()
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+	vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	wait(1)
+	vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+
+UICorner_6.Parent = AntiAFK
+
+text.Name = "text"
+text.Parent = main
+text.BackgroundColor3 = Color3.fromRGB(179, 0, 0)
+text.BorderSizePixel = 0
+text.Position = UDim2.new(0.0429184549, 0, 0.560000002, 0)
+text.Size = UDim2.new(0, 429, 0, 149)
+text.Font = Enum.Font.SourceSans
+text.Text = "FUCK NIGGER'S"
+text.TextColor3 = Color3.fromRGB(255, 255, 0)
+text.TextSize = 24.000
